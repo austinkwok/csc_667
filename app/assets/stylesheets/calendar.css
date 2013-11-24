@@ -1,0 +1,24 @@
+#month_year, #prev_year, #prev_month, #next_month, #next_year {
+  text-align: center;
+}
+
+#todo {
+  text-align: left;
+}
+
+#calendar {
+  table-layout: fixed;
+}
+
+#calendarTD {
+  padding-right: 5px;
+  text-align: right;
+  vertical-align: top;
+  height: 80px;
+}
+
+#weekday {
+  text-align: center;
+}
+
+

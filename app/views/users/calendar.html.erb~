@@ -1,0 +1,43 @@
+<html>
+ <head>
+    <title>Calendar</title>
+ </head>
+ <body>
+   Time<br>
+   <select id="time" >
+	<% for i in 0..23%>
+	<option value="<%= i %>:00"><%= i %>:00</option>
+	<% end %>
+   </select>
+   <br>
+   Description 
+   <br>
+   <input type="text" id="description">
+   <br><br>
+
+   <table id="calendar" border="1px" width=100%>
+    <thead>
+      <tr>
+        <th id="prev_year"><<</th>
+        <th id="prev_month"><</th>
+        <th id="month_year" colspan=3></th>
+        <th id="next_month">></th>
+        <th id="next_year">>></th>
+      </tr>
+      <tr>
+        <th id="weekday">Sun</th>
+        <th id="weekday">Mon</th>
+        <th id="weekday">Tue</th>
+        <th id="weekday">Wed</th>
+        <th id="weekday">Thu</th>
+        <th id="weekday">Fri</th>
+        <th id="weekday">Sat</th>
+      </tr>
+    </thead>
+    <tbody id="t_body"></tbody>
+  </table>
+
+  <br>
+
+  </body>
+</html>

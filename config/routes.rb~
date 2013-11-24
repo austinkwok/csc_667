@@ -6,8 +6,6 @@ Csc667::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   
-  get '/calendar', to: 'users#calendar'
-  
   match '/signup',  to: 'users#new',            via: 'get'
   match '/help',  to: 'pages#help',            via: 'get'
   match '/signin', to: 'sessions#new',     via: 'get'
