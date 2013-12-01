@@ -1,4 +1,5 @@
 Csc667::Application.routes.draw do
+  get "profile" => 'profile#profile'
   get "users/new"
   
   root to: "pages#home"

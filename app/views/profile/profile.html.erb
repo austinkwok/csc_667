@@ -9,13 +9,37 @@
 	</head>
 	
 	<body>
+		<!-- Fixed navbar -->
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar_size">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">CSC 667 Diet Site</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav" style="float: left">
+                        <li><a href="#">OVERVIEW</a></li>
+                        <li><a href="#">FOOD</a></li>
+                        <li><a href="#">EXERCISE</a></li>
+                        <li><a href="#">SCHEDULE</a></li>
+                        <li><a href="#">FRIENDS</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav" style="float: right">
+                        <li class="active"><a href="#" >Log in / Register</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+        <!-- navbar ends here -->
 		<div class="container">
-			<h1 id="user_name"><%= @user.name %>'s Page</h1>
+			<h1 id="user_name" style="padding-top: 50px;"><%= current_user.name %></h1>
 			<div class="row">
 				<div class="col-md-3" style="padding-top: 50px; float: left;">
 					<div class="panel panel-default">
 						<div class="panel-body">
-							<h3>Today's Meal</h3>
+							<h1>Today's Meal</h1>
 							<hr id="today_meal">
 								<ul>
 									<li>BreakFast</li>
@@ -28,7 +52,7 @@
 				<div class="col-md-6" style="padding-top: 50px">
 					<div >
 						<div class="panel-body">
-							<h3>Recent Activity</h3>
+							<h1>Recent Activity</h1>
 							<hr class="">
 								<div id="recent_activity">
 									Information: Whether or not they have been keeping up with their schedule.
@@ -41,7 +65,7 @@
 				<div class="col-md-3" style="padding-top: 50px; float: right;">
 					<div class="panel panel-default">
 						<div class="panel-body">
-							<h3>Friends</h3>
+							<h1>Friends</h1>
 							<hr>
 								<ul id="user_friends">
 									<li>Austin</li>
@@ -56,7 +80,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="panel panel-default">
-						<h3 style="text-align: center">Exercises & Diet for this week</h3>
+						<h1 style="text-align: center">Exercises & Diet for this week</h1>
 						Fill this up with a one week calendar?
 					</div>
 				</div>

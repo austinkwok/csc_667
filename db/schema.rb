@@ -13,7 +13,19 @@
 
 ActiveRecord::Schema.define(version: 20131107034542) do
 
+  create_table "demos", force: true do |t|
+    t.string   "item"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "test_tables", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "things", force: true do |t|
+    t.string   "item"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
