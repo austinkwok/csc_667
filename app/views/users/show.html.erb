@@ -1,8 +1,82 @@
-<%= @user.name %>, <%= @user.email %>
-
-<h1> Friends </h1>
-  <ul> 
-    <% for user in @user.friends %>
-    <li> <%= user.name %></li>
-    <% end %>
-   </ul>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5//EN"
+    "http://www.w3.org/TR/html5/html5.dtd"
+    >
+<html lang="en">
+	<head>
+		<title>Profile Page</title>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+		
+	</head>
+	
+	<body>
+		<div class="container">
+			<h1 id="user_name" style="padding-top: 50px;"><%= @user.name %></h1>
+			<div class="row">
+				<div class="col-md-3" style="padding-top: 50px; float: left;">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h3>Today's Meal</h3>
+							<hr id="today_meal">
+								<h5>Breakfast</h5>
+								<% @breakfasts.each do |meal| %>
+									<ul>
+										<li> <%= meal.food.name %> </li>
+									</ul>
+								<% end %>
+								<h5>Lunch</h5>
+								<% @lunches.each do |meal| %>
+									<ul>
+										<li> <%= meal.food.name %> </li>
+									</ul>
+								<% end %>
+								<h5>Dinner</h5>
+								<% @dinners.each do |meal| %>
+									<ul>
+										<li> <%= meal.food.name %> </li>
+									</ul>
+								<% end %>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6" style="padding-top: 50px">
+					<div >
+						<div class="panel-body">
+							<h3>Recent Activity</h3>
+							<hr class="">
+								<div id="recent_activity">
+									Information: Whether or not they have been keeping up with their schedule.
+									<br />
+									Example: They did complete the scheduled exercise or stayed on their diet that day.
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3" style="padding-top: 50px; float: right;">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h3>Friends</h3>
+							<hr>
+							<!-- display user's friends -->
+							<ul> 
+								<% for user in @user.friends %>
+									<li>
+										<%= user.name %>
+									</li>
+								<% end %>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<h3 style="text-align: center">Exercises & Diet for this week</h3>
+						Fill this up with a one week calendar?
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

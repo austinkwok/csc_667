@@ -9,6 +9,18 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+	if params[:date].present? 
+       date = params[:date]
+    else
+       date = Time.now.strftime("%F")
+    end
+	@user = User.find_by(@user.id)
+    @meals = @user.meals.where('date = ? ', date )
+    @breakfasts = @meals.where(meal_tag: "breakfast").group("meal_tag")
+    @lunches = @meals.where(meal_tag: "lunch")
+    @dinners = @meals.where(meal_tag: "dinner") 
+    @date =  Date.parse(date)
+    @calories = @user.goal.calories
   end
 
   def index
