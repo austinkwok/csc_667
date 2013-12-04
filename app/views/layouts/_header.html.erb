@@ -8,8 +8,12 @@
           <li><%= link_to "Help", help_path %></li>
           <li><%= link_to "Food", "/food/search" %></li>
           <% if signed_in? %>
+<<<<<<< HEAD
             <li><%= link_to "Meal", meal_plan_path %>
             <li><%= link_to "Calendar", calendar_path %>
+=======
+ 	    <li><%= link_to "Meal", meal_plan_path %>
+>>>>>>> d185f359c32dfe61d144ea4e8c062f6e00a6914c
             <li><%= link_to "Users", users_path %></li>
             <li><%= link_to "Grocery Lists", grocery_lists_path %></li>
             <li id="fat-menu" class="dropdown">

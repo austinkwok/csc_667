@@ -22,13 +22,21 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+<<<<<<< HEAD
 gem 'therubyracer', platforms: :ruby
+=======
+# gem 'therubyracer', platforms: :ruby
+>>>>>>> d185f359c32dfe61d144ea4e8c062f6e00a6914c
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+<<<<<<< HEAD
 #gem 'turbolinks'
+=======
+gem 'turbolinks'
+>>>>>>> d185f359c32dfe61d144ea4e8c062f6e00a6914c
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -51,6 +59,11 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # gem 'debugger', group: [:development, :test]
 
 ##
+<<<<<<< HEAD
 #gem 'therubyracer'
 gem 'bootstrap-sass', '~> 2.3.2.2' 
 gem 'jquery-qtip2-rails'
+=======
+gem 'therubyracer'
+gem 'bootstrap-sass', '~> 2.3.2.2' 
+>>>>>>> d185f359c32dfe61d144ea4e8c062f6e00a6914c

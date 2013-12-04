@@ -36,8 +36,11 @@ Csc667::Application.routes.draw do
   match '/meal/food/search/results', to: 'food#item_search', via: 'get'
   match '/calendar', to: 'calendar#index', via: 'get'
   match '/calendar/meals/', to: 'calendar#show', via: 'get'
+<<<<<<< HEAD
   
   
+=======
+>>>>>>> d185f359c32dfe61d144ea4e8c062f6e00a6914c
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

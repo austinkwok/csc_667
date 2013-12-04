@@ -12,6 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+<<<<<<< HEAD
 //= require bootstrap
 //= require jquery.qtip.js
+=======
+//= require turbolinks
+//= require bootstrap
+>>>>>>> d185f359c32dfe61d144ea4e8c062f6e00a6914c
 //= require_tree .
