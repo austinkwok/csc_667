@@ -1,0 +1,4 @@
+<h1> This is where the results will go</h1>
+<% @results.each do |food| %>
+  <%=link_to "#{food.name}", food_nutritional_path(:id => food.id) %>
+<% end %>

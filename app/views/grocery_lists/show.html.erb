@@ -1,0 +1,35 @@
+<h1>List: <%= @list.list_id %></h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <td>Item</td>
+      <td>Quantity</td>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody>
+  <% @item.each do |item| %>
+  <tr>
+    <td> <%= item.food_id %></td>
+    <td> <%= item.quantity %></td>
+    <td> <%= item.type %></td>
+    </tr>
+  <% end %>
+</tbody>
+</table>
+
+<%= form_for(@items) do |f| %>
+      <!-- <%= render 'shared/error_messages', object: f.object %> -->
+      
+      <%= f.label :food %>
+      <%= f.text_field :food_id %>
+      
+      <%= f.label :quantity %>
+      <%= f.text_field :quantity %>
+      
+      <%= f.label :Comment %>
+      <%= f.text_field :type %>
+      <input type = "hidden" name = "id" value= <%= @list.id%>/>
+      <%= f.submit "Add to list", class: "btn btn-large btn-primary" %>
+    <% end %>

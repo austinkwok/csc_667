@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  calories: 1
+  sodium: 1
+  totalfat: 1
+  saturated: 1
+  polyunsaturated: 1
+  monosaturated: 1
+  transfat: 1
+  cholesterol: 1
+  potassium: 1
+  carbs: 1
+  fiber: 1
+  sugar: 1
+  protein: 1
+
+two:
+  name: MyString
+  calories: 1
+  sodium: 1
+  totalfat: 1
+  saturated: 1
+  polyunsaturated: 1
+  monosaturated: 1
+  transfat: 1
+  cholesterol: 1
+  potassium: 1
+  carbs: 1
+  fiber: 1
+  sugar: 1
+  protein: 1

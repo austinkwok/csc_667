@@ -1,0 +1,36 @@
+<h1> <%= @item.name %> </h1>
+<table class="table">
+  <thead>
+    <tr> <td> Nutritional Info </td></tr>
+  </thead>  
+  <tbody>
+    <tr>
+      <td>
+        <strong>Calories</strong>   <%=@item.calories %><br>
+        <strong>Total Fat</strong> 
+          <%= @item.totalfat == nil ? '0' : @item.totalfat %> <br>
+        Saturated 
+          <%= @item.saturated == nil ? '0' : @item.saturated %> <br>
+        Polyunsaturated 
+          <%= @item.polyunsaturated == nil ? '0' : @item.polyunsaturated %> <br>
+        Monosaturated 
+          <%= @item.monosaturated == nil ? '0' : @item.monosaturated %> <br>
+        Transfat 
+          <%= @item.transfat == nil ? '0' : @item.transfat %> <br>
+        <strong>Cholesterol</strong>
+          <%= @item.cholesterol == nil ? '0' : @item.cholesterol %> <br>
+      </td>
+      <td>
+        <strong>Potassium</strong>
+          <%= @item.potassium == nil ? '0' : @item.potassium %> <br>
+        <strong>Carbs</strong>
+          <%= @item.carbs == nil ? '0' : @item.carbs %> <br>
+        <strong>Fiber</strong>
+          <%= @item.fiber == nil ? '0' : @item.fiber %> <br>
+        <strong>Sugars</strong>
+          <%= @item.sugar == nil ? '0' : @item.sugar %> <br>
+        <strong>Protein</strong>
+          <%= @item.protein == nil ? '0' : @item.protein %> <br>
+    </tr>
+  </tbody>
+</table>     

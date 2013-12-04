@@ -1,0 +1,33 @@
+#month_year, #prev_year, #prev_month, #next_month, #next_year, #weekday {
+  text-align: center;
+  #color: #ffffff;
+  background-color: #cbcbcb
+}
+
+#todo {
+  text-align: left;
+  padding-left: 8px;
+  #background-color: #99CCFF;
+  display: inline-block;
+  color: #000099
+}
+
+#calendar {
+  table-layout: fixed;
+}
+
+#calendarTD {
+  padding-right: 5px;
+  vertical-align: top;
+  height: 80px;
+}
+
+#date_number {
+  text-align: right;
+}
+
+#food {
+  text-align: center;
+}
+
+

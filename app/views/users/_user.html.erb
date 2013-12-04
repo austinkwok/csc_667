@@ -1,0 +1,12 @@
+<li>
+  <%= link_to user.name, user %>
+  <% if !@friends.exists?(user.id) then %>
+    <%= link_to "Add Friend", friendships_path(:friend_id => user.id), :method => :post %>
+    <% else %>
+       (Friends)
+    <% end %>
+  <% if current_user.admin? && !current_user?(user) %>
+    | <%= link_to "delete", user, method: :delete,
+                                  data: { confirm: "You sure?" } %>
+  <% end %>
+</li>

@@ -1,0 +1,16 @@
+<h1>GroceryList</h1>
+
+<% @lists.each do |list| %>
+  <li><%=link_to list.list_id, list %></li>
+<% end %>
+
+
+<%= form_for(@list) do |f| %>
+      <!-- <%= render 'shared/error_messages', object: f.object %> -->
+      
+      <%= f.label :List_Name %>
+      <%= f.text_field :list_id %>
+
+      <%= f.submit "Create List", class: "btn btn-large btn-primary" %>
+    <% end %>
+

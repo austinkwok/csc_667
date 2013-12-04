@@ -1,0 +1,18 @@
+<h3> Search the database: </h3>
+<form class="form-inline" role="form" action="food/search/results" method="post">
+  <div class="form-group">
+    <input type="text" class="form-control" name="food_item" placeholder="Enter food name"/>
+  </div>   
+  <button class="btn btn-default">Search</button>
+</form>
+
+<h3> Search from previous meals: </h3>
+<div>
+<ul class="nav nav-tabs">
+  <li><a href="#recent" data-toggle="tab">Recent</a></li>
+  <li><a href="#frequent" data-toggle="tab">Frequent</a></li>
+  <li><a href="#allmeals" data-toggle="tab">All Meals</a></li>
+</ul>
+
+<%= render partial: 'user_meal_add', locals: {recent:@recent, frequent:@frequent, allmeal:@all} %>
+</div>

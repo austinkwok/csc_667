@@ -1,0 +1,41 @@
+<div class="date-toggle">
+  <div id="prev">
+  <%= link_to "<", meal_plan_path(:date => @date.yesterday.strftime("%F")) %>
+  </div>
+<div id="current"> <%= @date.strftime("%B %e, %Y") %> </div>
+<div id="next">  <%= link_to ">", meal_plan_path(:date => @date.next.strftime("%F")) %>
+</div></div>
+
+<ul class="nav nav-tabs">
+  <li><a href="#default" data-toggle="tab">All</a><li>
+  <li><a href="#breakfast" data-toggle="tab">Breakfast</a></li>
+  <li><a href="#lunch" data-toggle="tab">Lunch</a></li>
+  <li><a href="#dinner" data-toggle="tab">Dinner</a></li>
+</ul>
+
+<%= render partial: 'meal_content', locals: {user: @user, meals: @meals, breakfasts: @breakfasts, lunches: @lunches, dinners: @dinners} %>
+
+<!---
+
+<ul class="nav nav-tabs">
+  <li><a href="#default" data-toggle="tab">All</a><li>
+  <li><a href="#breakfast" data-toggle="tab">Breakfast</a></li>
+  <li><a href="#lunch" data-toggle="tab">Lunch</a></li>
+  <li><a href="#dinner" data-toggle="tab">Dinner</a></li>
+</ul>
+-->
+<!-- tab content -->
+<!--
+<div class="tab-content">
+  <div class="tab-pane active" id="default"> ALL HERE </div>
+  <div class="tab-pane" id="breakfast"> BREAKFAST HERE 
+  </div>
+  <div class="tab-pane" id="lunch"> LUNCH  HERE </div>
+  <div class="tab-pane" id="dinner"> DINNER  HERE </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+-->

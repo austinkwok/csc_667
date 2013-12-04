@@ -1,0 +1,14 @@
+<h1><center> <%= @item.name %></center></h1>
+<center><%= link_to "nutritional info", food_nutritional_path(:id => @item.id) %> </center>
+
+<form method="post" action="/meal/food/add_item">
+<select name="meal">
+  <option value="breakfast">Breakfast</option>
+  <option value="lunch">Lunch</option>
+  <option value="dinner">Dinner</option>
+</select>
+<input type="hidden" name="food_item" value=<%= @item.id %> />
+<input type="hidden" name="d" value=<%= Time.now.strftime("%F") %> />
+
+<button class="btn btn-default" type="submit">Save</button>
+</form>

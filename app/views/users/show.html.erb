@@ -1,0 +1,8 @@
+<%= @user.name %>, <%= @user.email %>
+
+<h1> Friends </h1>
+  <ul> 
+    <% for user in @user.friends %>
+    <li> <%= user.name %></li>
+    <% end %>
+   </ul>

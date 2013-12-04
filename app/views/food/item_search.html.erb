@@ -1,0 +1,21 @@
+<h1> This is where the results will go</h1>
+<% @results.each do |food| %>
+  <%=link_to food.name, "#add-food-item", :data => {:toggle => "modal", :href =>food_add_through_modal_path(:id => food.id)}, :class => "myModal" %><br>
+<% end %>
+
+<div class="modal fade" id="add-food-item" tabindex="-1" role="dialog"aria-labelledby="addItemLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="modalTitle"> Add Food To Meal </h4>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"> Save </button>
+      </div>
+    </div>
+  </div>
+</div>

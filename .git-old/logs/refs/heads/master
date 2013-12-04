@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 10734f3cc0382e1e736779387f9200c46a9f8fc4 Bianca Uy <uy.biancamarie@gmail.com> 1382301474 -0700	clone: from git@github.com:FatDuckGH/csc_667.git
+10734f3cc0382e1e736779387f9200c46a9f8fc4 595796f973a281d86d8e29b67935b74442c37632 Bianca Uy <uy.biancamarie@gmail.com> 1382304301 -0700	commit: Added bootstrap framework. Must include "@import bootstrap" to any .scss.css files created.
+595796f973a281d86d8e29b67935b74442c37632 54187d5e7d952e2995cb3514657d7812e9984b03 Bianca Uy <uy.biancamarie@gmail.com> 1385875494 -0800	pull: Fast-forward

@@ -1,0 +1,29 @@
+0000000000000000000000000000000000000000 595796f973a281d86d8e29b67935b74442c37632 Bianca Uy <uy.biancamarie@gmail.com> 1385415155 -0800	branch: Created from HEAD
+595796f973a281d86d8e29b67935b74442c37632 d25726a10c8fe5d60df47e96471235bd9db92100 Bianca Uy <uy.biancamarie@gmail.com> 1385415347 -0800	merge origin/scott: Fast-forward
+d25726a10c8fe5d60df47e96471235bd9db92100 eb2b7ccefddb8a976260fc5651d66e30dd2c740c Bianca Uy <uy.biancamarie@gmail.com> 1385415912 -0800	commit: Added rubyracer to Gemfile.
+eb2b7ccefddb8a976260fc5651d66e30dd2c740c 191d8cf55f2210be0866fd41a1674be63698b10b Bianca Uy <uy.biancamarie@gmail.com> 1385425691 -0800	commit: Basic pages for meal and food search. DB schema for food created.
+191d8cf55f2210be0866fd41a1674be63698b10b 36541d04725d7369c02f8ebcd7bcbed1a6371b51 Bianca Uy <uy.biancamarie@gmail.com> 1385448396 -0800	commit: Rough connection between database and view for Meal.
+36541d04725d7369c02f8ebcd7bcbed1a6371b51 a2a0baf8d415f667f89e117154a36c9b0aa4200a Bianca Uy <uy.biancamarie@gmail.com> 1385453038 -0800	commit: Association between models Meal and User.
+a2a0baf8d415f667f89e117154a36c9b0aa4200a 9ac174f26fd381bc6176b5f982ec8a5c1c4b09a2 Bianca Uy <uy.biancamarie@gmail.com> 1385458242 -0800	commit: Fixed associations. Food table cannot be associate with Meal requires meal_id?
+9ac174f26fd381bc6176b5f982ec8a5c1c4b09a2 513a6688670476df03c7438a1b7db99a02dbd0fa Bianca Uy <uy.biancamarie@gmail.com> 1385500233 -0800	commit: Corrected the has_many through association
+513a6688670476df03c7438a1b7db99a02dbd0fa 81196a6fb8aac464e83eeb327fcee77893120c7b Bianca Uy <uy.biancamarie@gmail.com> 1385512954 -0800	commit: Display data from db. Ajax calls to be added.
+81196a6fb8aac464e83eeb327fcee77893120c7b 2a2d3a342b5b0ccd7ffa4bc8bf9de73a3ba67802 Bianca Uy <uy.biancamarie@gmail.com> 1385518133 -0800	commit: updated bootstrap-sass version
+2a2d3a342b5b0ccd7ffa4bc8bf9de73a3ba67802 2a642583d98d96aa254c873ee1a7d5056f01592b Bianca Uy <uy.biancamarie@gmail.com> 1385525992 -0800	commit: Working on Food Search.
+2a642583d98d96aa254c873ee1a7d5056f01592b df0d3eec8b906c4bf9bee44cbe575632b5313d10 Bianca Uy <uy.biancamarie@gmail.com> 1385532096 -0800	commit: Nutritional page for food item.
+df0d3eec8b906c4bf9bee44cbe575632b5313d10 2e8b54cb1a118515c5ddf38faf864dad601948e1 Bianca Uy <uy.biancamarie@gmail.com> 1385532826 -0800	commit: Pages show measurement.
+2e8b54cb1a118515c5ddf38faf864dad601948e1 8cb31b45e66e7b76b689ba5dc43df10a8e1d8462 Bianca Uy <uy.biancamarie@gmail.com> 1385534525 -0800	commit: Added stub for adding food to meal
+8cb31b45e66e7b76b689ba5dc43df10a8e1d8462 8d388f6fdd2b870af785fedbda3f3bbf26c6e2bf Bianca Uy <uy.biancamarie@gmail.com> 1385536397 -0800	commit: Fixed db migration
+8d388f6fdd2b870af785fedbda3f3bbf26c6e2bf 17eca6fcfc5192f62d54fd0dcc7ab813339b4878 Bianca Uy <uy.biancamarie@gmail.com> 1385541679 -0800	commit: Filled add meal page. No backend connection yet.
+17eca6fcfc5192f62d54fd0dcc7ab813339b4878 c8354eb5a3122622c388fc1e991e16615c413652 Bianca Uy <uy.biancamarie@gmail.com> 1385542937 -0800	commit: Testing backend connection to add food item to meal
+c8354eb5a3122622c388fc1e991e16615c413652 fc3ea5ff57a657f08952dd09665f4a5c71c38ef5 Bianca Uy <uy.biancamarie@gmail.com> 1385575133 -0800	commit: View by Recent, Frequent, All Meals. Need to allow to be added.
+fc3ea5ff57a657f08952dd09665f4a5c71c38ef5 1c9b92d3d9b7f6a19fc1dbba265ba29546383fdb Bianca Uy <uy.biancamarie@gmail.com> 1385611729 -0800	commit: Allow to toggle between dates in meals page.
+1c9b92d3d9b7f6a19fc1dbba265ba29546383fdb 96dfe1b7a9d19f4e7c64298ee537f623866b1973 Bianca Uy <uy.biancamarie@gmail.com> 1385619430 -0800	commit: Add fod to meal from tabs (frequent, recent, all meals).
+96dfe1b7a9d19f4e7c64298ee537f623866b1973 c6847b5405fbc4c46074614314f4eb8ffbd1310a Bianca Uy <uy.biancamarie@gmail.com> 1385627090 -0800	commit: Add food item to meal by searching.
+c6847b5405fbc4c46074614314f4eb8ffbd1310a 2d5c65293ad5371bdbc63365c25ef5ee25165e0b Bianca Uy <uy.biancamarie@gmail.com> 1385783222 -0800	commit: Display total and remaining calories of the meal.
+2d5c65293ad5371bdbc63365c25ef5ee25165e0b 496825ed2e0922f462af725712478cea93b9fff2 Bianca Uy <uy.biancamarie@gmail.com> 1385784462 -0800	commit: Remove dead links.
+496825ed2e0922f462af725712478cea93b9fff2 6a851fbbf42bab9c080dcac0001c00f811e9e9d0 Bianca Uy <uy.biancamarie@gmail.com> 1385872762 -0800	commit: Fixing bootstrap issue.
+6a851fbbf42bab9c080dcac0001c00f811e9e9d0 eb541b3754615d2d50c584e3c10f8055d8556444 Bianca Uy <uy.biancamarie@gmail.com> 1385872882 -0800	commit: Still fixing.
+eb541b3754615d2d50c584e3c10f8055d8556444 2c4e2ad4b1be6cac78e2a0797b3696fdc4c14660 Bianca Uy <uy.biancamarie@gmail.com> 1385873121 -0800	commit: Fixing
+2c4e2ad4b1be6cac78e2a0797b3696fdc4c14660 36c5e3e2a86c7953bb6a6ed0393139fa85097ab7 Bianca Uy <uy.biancamarie@gmail.com> 1385875844 -0800	commit: Fixing issues.
+36c5e3e2a86c7953bb6a6ed0393139fa85097ab7 f6dc0aeebcd128d5312aca5aaf19825598ae987d Bianca Uy <uy.biancamarie@gmail.com> 1385875994 -0800	commit: Included a gem.
+f6dc0aeebcd128d5312aca5aaf19825598ae987d 3f564ae95040e3da932e2e850b92fe9ce88473af Bianca Uy <uy.biancamarie@gmail.com> 1385876167 -0800	commit: Changed bootstrap-sass
